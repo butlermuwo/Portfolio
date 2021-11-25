@@ -5,6 +5,10 @@
   font-family: 'poppins', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
 }
@@ -27,6 +31,8 @@ main {
 
 header {
   padding: 15px;
+  display: flex;
+  justify-content: space-between ;
 }
 
 .introduction {

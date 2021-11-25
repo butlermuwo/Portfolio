@@ -32,7 +32,7 @@ main {
 header {
   padding: 15px;
   display: flex;
-  justify-content: space-between ;
+  justify-content: space-between;
 }
 
 .introduction {

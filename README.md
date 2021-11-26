@@ -2,21 +2,20 @@
 
 # Project Name
 
-> One paragraph statement about the project.
+> Setting the mobile first version skeleton of portfolio.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./demoscreen.png)
 
 Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link When Available](https://livedemo.com)
 
 
 ## Getting Started
@@ -27,33 +26,20 @@ Additional description about the project and its features.
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
 
-### Setup
+## Setup
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Butler Muwo**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@butlermuwo](https://github.com/githubhandle)
+- Twitter: [@ButlerMuwo](https://twitter.com/twitterhandle)
+- LinkedIn: [www.linkedin.com/in/butler-shimaluwani-41a680159](https://linkedin.com/in/www.linkedin.com/in/butler-shimaluwani-41a680159)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 

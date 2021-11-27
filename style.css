@@ -134,7 +134,7 @@ header {
 .project-title {
   display: flex;
   justify-content: start;
-  margin: 10px;
+  margin: 6px;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;

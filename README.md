@@ -4,7 +4,7 @@
 
 > Setting the mobile first version skeleton of portfolio.
 
-![screenshot](./demoscreen.png)
+![screenshot](Images/demoscreen.png)
 
 Additional description about the project and its features.
 

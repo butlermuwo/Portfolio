@@ -119,7 +119,7 @@ header {
 
 .canopy {
   color: #344563;
-  margin-left: 12px;
+  margin-left: -48px;
 }
 
 .project-img {
@@ -135,6 +135,9 @@ header {
   display: flex;
   justify-content: start;
   margin: 10px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .project-title h2 {

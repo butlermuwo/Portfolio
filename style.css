@@ -177,7 +177,20 @@ span {
   color: #344563;
 }
 
-.technologies {
+
+.float-child {
+  margin-left: 7px;
+  padding: 3px 7px 3px 7px;
+  float: left;
+  background-color: #ebebff;
+  border-radius: 5px;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 12px;
+}  
+
+
+/* .technologies {
   display: flex;
   margin: 10px 10px;
 }
@@ -191,7 +204,7 @@ span {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-}
+} */
 
 .project-btn {
   font-weight: 500;

@@ -7,7 +7,7 @@
 
 body {
   background-color: #fff;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .body-wrapper {
@@ -226,6 +226,7 @@ span {
   margin: 40px 0;
   background-color: #fff;
   border-top-right-radius: 80px;
+
   /* height: 160vh; */
 }
 
@@ -310,8 +311,7 @@ span {
 .footer-container {
   background-color: #fff;
   height: 100%;
-  margin-top: 0px;
-
+  margin-top: 0;
 }
 
 .contact-wrapper {
@@ -336,22 +336,21 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0px 30px 0px 30px;
+  margin: 0 30px 0 30px;
   padding-top: 50px;
-
 }
 
 .contact-heading {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 40px;
   font-family: 'poppins', sans-serif;
-  color:white;
+  color: white;
   margin-bottom: 5px;
 }
 
 .message-contact {
   margin-top: 5px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 28px;
   font-family: 'poppins', sans-serif;
   font-size: 20px;
@@ -362,7 +361,7 @@ span {
 .contact-form {
   display: flex;
   flex-direction: column;
-  margin: 25px 30px 0px 30px;
+  margin: 25px 30px 0 30px;
 }
 
 .form-input {
@@ -391,7 +390,7 @@ span {
   width: 140px;
   height: 48px;
   border-radius: 8px;
-  background: #ffffff;
+  background: #fff;
   color: #6070ff;
   font-size: 17px;
   font-family: 'Poppins', sans-serif;
@@ -408,7 +407,6 @@ span {
 
 .btn-effect:hover {
   border: 1px solid #396df2;
-  height:24px;
   background: #396df2;
   color: white;
   width: 140px;
@@ -417,7 +415,6 @@ span {
 }
 
 .btn-effect:active {
-  height:24px;
   background: navy;
   color: white;
   width: 140px;

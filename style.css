@@ -6,6 +6,11 @@
 }
 
 body {
+  background-color: #fff;
+  margin-bottom: 0px;
+}
+
+.body-wrapper {
   background-color: #e5e5e5;
 }
 
@@ -221,7 +226,7 @@ span {
   margin: 40px 0;
   background-color: #fff;
   border-top-right-radius: 80px;
-  height: 160vh;
+  /* height: 160vh; */
 }
 
 .about-btn {
@@ -305,18 +310,119 @@ span {
 .footer-container {
   background-color: #fff;
   height: 100%;
+  margin-top: 0px;
 
 }
 
 .contact-wrapper {
   border-top-left-radius: 100px;
   background-color: #6070ff;
-  background-size: 100px;
+  background-size: 100%;
   width: 100%;
   height: 100%;
+  padding-bottom: 50px;
 }
 
 .contact-wrapper-two {
+  background-image: url(/Images/contact_form_shapes_mobile.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  padding-top: 50px;
+  background-size: contain;
+  width: 100%;
+}
+
+.contactme-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 30px 0px 30px;
+  padding-top: 50px;
 
 }
+
+.contact-heading {
+  font-weight: 700px;
+  font-size: 40px;
+  font-family: 'poppins', sans-serif;
+  color:white;
+  margin-bottom: 5px;
+}
+
+.message-contact {
+  margin-top: 5px;
+  font-weight: 400px;
+  line-height: 28px;
+  font-family: 'poppins', sans-serif;
+  font-size: 20px;
+  color: #ebebff;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 30px 0px 30px;
+}
+
+.form-input {
+  margin-bottom: 15px;
+  height: 48px;
+  border-radius: 8px;
+  font-size: 17px;
+  padding: 16px;
+  color: #172b4d;
+  font-family: 'poppins', sans-serif;
+  border: 1px solid #cfd8dc;
+}
+
+.form-textarea {
+  height: 170px;
+  border-radius: 8px;
+  font-size: 17px;
+  padding: 16px;
+  border: 1px solid #cfd8dc;
+  margin-bottom: 15px;
+  color: #b3bac5;
+  font-family: 'poppins', sans-serif;
+}
+
+.contact-submit {
+  width: 140px;
+  height: 48px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #6070ff;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-effect:disabled {
+  border: 2px solid grey;
+  background: white;
+  color: grey;
+  width: 140px;
+  height: 48px;
+  border-radius: 8px;
+}
+
+.btn-effect:hover {
+  border: 1px solid #396df2;
+  height:24px;
+  background: #396df2;
+  color: white;
+  width: 140px;
+  height: 48px;
+  border-radius: 8px;
+}
+
+.btn-effect:active {
+  height:24px;
+  background: navy;
+  color: white;
+  width: 140px;
+  height: 48px;
+  border-radius: 8px;
+}
+
 /* contact form end */

@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 body {
@@ -35,16 +35,29 @@ ul {
 }
 
 header {
-  padding: 15px;
+  padding: 40px;
   display: flex;
   justify-content: space-between;
   background-color: #fff;
 }
 
+.desk-nav {
+  display: none;
+}
+
+.desk-nav a {
+  color: #000;
+  font-weight: 500;
+}
+
+.mobile-nav {
+  display: block;
+}
+
 .introduction {
   display: flex;
   flex-direction: column;
-  background-image: url('./Images/background.png');
+  background-image: url("./Images/background.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -122,9 +135,13 @@ header {
   flex-direction: column;
 }
 
+.reverse {
+  flex-direction: column;
+}
+
 .canopy {
   color: #344563;
-  margin-left: -48px;
+  margin-left: 6px;
 }
 
 .project-img {
@@ -343,7 +360,7 @@ span {
 .contact-heading {
   font-weight: 700;
   font-size: 40px;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   color: white;
   margin-bottom: 5px;
 }
@@ -352,7 +369,7 @@ span {
   margin-top: 5px;
   font-weight: 400;
   line-height: 28px;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   font-size: 20px;
   color: #ebebff;
   text-align: center;
@@ -361,18 +378,22 @@ span {
 .contact-form {
   display: flex;
   flex-direction: column;
-  margin: 25px 30px 0 30px;
+  justify-content: center;
+  margin: 18px auto;
+  width: 320px;
 }
 
 .form-input {
   margin-bottom: 15px;
   height: 48px;
-  border-radius: 8px;
+  border-radius: 2px;
   font-size: 17px;
-  padding: 16px;
+  padding: 18px;
   color: #172b4d;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   border: 1px solid #cfd8dc;
+
+  /* max-width: 400px; */
 }
 
 .form-textarea {
@@ -383,17 +404,18 @@ span {
   border: 1px solid #cfd8dc;
   margin-bottom: 15px;
   color: #b3bac5;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 .contact-submit {
   width: 140px;
   height: 48px;
-  border-radius: 8px;
+  border: none;
+  border-radius: 5px;
   background: #fff;
   color: #6070ff;
   font-size: 17px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .btn-effect:disabled {
@@ -423,3 +445,127 @@ span {
 }
 
 /* contact form end */
+
+/* Desktop Version Start */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .intro-text {
+    font-size: 45px;
+    line-height: 54px;
+    width: 346px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .desk-nav {
+    display: block;
+    display: flex;
+  }
+
+  .desk-nav li {
+    margin: 0 10px;
+  }
+
+  .text-2 {
+    width: 920px;
+  }
+
+  .introduction {
+    background-image: url("./Images/header-bg-desktop.png");
+    background-position-y: 45px;
+    padding: 0 180px;
+  }
+
+  header {
+    padding: 70px;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .project-card {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .project-img {
+    width: 50%;
+  }
+
+  .project-img img {
+    width: 100%;
+  }
+
+  .card-info {
+    width: 50%;
+    margin: 20px;
+  }
+
+  .project-title {
+    margin: 15px 0;
+  }
+
+  .project-paragraph {
+    margin: 15px 0;
+  }
+
+  .technologies {
+    margin: 15px 0;
+  }
+
+  .project-btn {
+    margin: 15px 0;
+  }
+
+  .about {
+    display: grid;
+    gap: 90px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dropdown-technologies {
+    background-color: #f7f7f9;
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    width: 122px;
+    height: 120px;
+    align-items: center;
+    margin: 10px 0;
+    border-radius: 7%;
+  }
+
+  .inner {
+    display: flex;
+  }
+
+  .inner li {
+    margin: 10px;
+  }
+
+  .intro-text {
+    width: 355px;
+  }
+
+  .ul-tec-li {
+    margin-top: 105px;
+  }
+
+  .message-contact {
+    width: 450px;
+  }
+
+
+  .contact-form {
+    width: 400px;
+  }
+}
+
+/* Desktop Version End */

@@ -449,16 +449,16 @@ span {
 /* Desktop Version Start */
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .intro-text {
     font-size: 45px;
     line-height: 54px;
     width: 346px;
   }
-}
+} */
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 992px) {
   .desk-nav {
     display: block;
     display: flex;
@@ -565,6 +565,6 @@ span {
   .contact-form {
     width: 400px;
   }
-}
+} */
 
 /* Desktop Version End */

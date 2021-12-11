@@ -536,6 +536,10 @@ span {
     margin: 20px;
   }
 
+  .project-btn {
+    margin: 15px 0;
+  }
+
   .project-btn:disabled {
     border: 2px solid grey;
     background: white;
@@ -582,10 +586,6 @@ span {
   }
 
   .technologies {
-    margin: 15px 0;
-  }
-
-  .project-btn {
     margin: 15px 0;
   }
 

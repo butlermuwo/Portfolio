@@ -544,8 +544,9 @@ span {
     border: 1px solid #396df2;
     background: #396df2;
     color: white;
-    width: 140px;
+    width: 120px;
     height: 48px;
+    padding: 10px;
     border-radius: 8px;
   }
 

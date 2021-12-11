@@ -540,15 +540,6 @@ span {
     margin: 15px 0;
   }
 
-  .project-btn:disabled {
-    border: 2px solid grey;
-    background: white;
-    color: grey;
-    width: 140px;
-    height: 48px;
-    border-radius: 8px;
-  }
-
   .project-btn:hover {
     border: 1px solid #396df2;
     background: #396df2;
@@ -561,6 +552,15 @@ span {
   .project-btn:active {
     background: navy;
     color: white;
+    width: 140px;
+    height: 48px;
+    border-radius: 8px;
+  }
+
+  .project-btn:disabled {
+    border: 2px solid grey;
+    background: white;
+    color: grey;
     width: 140px;
     height: 48px;
     border-radius: 8px;

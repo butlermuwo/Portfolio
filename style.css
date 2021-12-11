@@ -609,10 +609,6 @@ span {
     border-radius: 7%;
   }
 
-  .intro-text {
-    margin: 0;
-  }
-
   .inner {
     display: flex;
   }

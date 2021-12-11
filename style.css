@@ -669,4 +669,16 @@ span {
   }
 }
 
+
+.intro-text {
+  display: block;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+  
+}
+
+.intro-text:hover {
+  background-color: #FFCCCC;
+  transform: rotate(180deg);
+  color: blue;
+}
 /* animations end */

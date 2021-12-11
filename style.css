@@ -247,6 +247,8 @@ span {
   margin: 40px 0;
   background-color: #fff;
   border-top-right-radius: 80px;
+
+  /* height: 160vh; */
 }
 
 .about-btn {

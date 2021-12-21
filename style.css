@@ -118,6 +118,56 @@ header {
   font-size: 20px;
 }
 
+/* Mobile-Menu */
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: #fff solid 1px;
+  background: inherit;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+  color: #fff;
+  background-color: #6070ff;
+  border: #6070ff solid 10px;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #6070ff;
+  opacity: 0.9;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.menuItem {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-left: 25px;
+}
+
 /* -----work section----- */
 
 .works {
@@ -631,6 +681,10 @@ span {
 
   .contact-form {
     width: 400px;
+  }
+
+  .hamburger {
+    display: none;
   }
 }
 

@@ -152,7 +152,6 @@ window.onclick = function (event) {
 window.onload = init();
 
 // OPEN &  CLOSE MENU
-
 const menu = document.querySelector('.menu');
 const menuItems = document.querySelectorAll('.menuItem');
 const hamburger = document.querySelector('.hamburger');

@@ -829,7 +829,6 @@ span {
   .contact-form {
     width: 400px;
   }
-
   .cards-container {
     flex-direction: row;
   }
@@ -868,5 +867,4 @@ span {
     width: 100%;
   }
 }
-
-/* Desktop Version End */
+}

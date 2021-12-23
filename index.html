@@ -25,13 +25,21 @@
     <header class="introduction-top">
       <h2 class="logo"><a href="#">Welcome</a></h2>
       <nav class="nav-bar">
-        <span class="material-icons mobile-nav">menu</span>
+        <button class="hamburger">
+          <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
+        </button>
         <ul class="desk-nav">
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <ul class="menu">
+        <li><a class="menuItem" href="#">Portfolio</a></li>
+        <li><a class="menuItem" href="#about">About</a></li>
+        <li><a class="menuItem" href="#contact">Contact</a></li>
+      </ul>
     </header>
     <main class="body-wrapper">
       <section class="introduction">
@@ -198,7 +206,7 @@
           </div>
         </article>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div>
           <div>
             <h1 class="intro-text down">About Myself</h1>
@@ -273,7 +281,7 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="footer-container">
+    <footer class="footer-container" id="contact">
       <div class="contact-wrapper">
         <div class="contact-wrapper-two">
           <div class="contactme-body">
@@ -319,5 +327,6 @@
       </div>
     </footer>
     <!-- footer -->
+    <script src="main.js"></script>
   </body>
 </html>

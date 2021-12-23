@@ -1,188 +1,185 @@
-// popups
-/* eslint-disable comma-dangle */
-/* eslint-disable indent */
-/* eslint-disable no-plusplus */
-const hamburger = document.querySelector('.menu');
-const links = document.querySelectorAll('.mobile-menu a');
-hamburger.addEventListener('click', () => {
-  if (hamburger.classList.contains('active')) {
-    hamburger.classList.remove('active');
-    document.querySelector('.mobile-menu').style.display = 'none';
-  } else {
-    hamburger.classList.add('active');
-    document.querySelector('.mobile-menu').style.display = 'block';
-  }
-});
-
-links.forEach((a) => {
-  a.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    hamburger.classList.remove('active');
-    document.querySelector('.mobile-menu').style.display = 'none';
-  });
-});
-
-// popupwindow
-
-const cardObject = [
+const projects = [
   {
-    id: 1,
-    title: 'Tonic',
-    subTitle: 'CANOPY',
-    imageMobile: './img/Snapshoot-Portfolio.png',
-    imageDesktop: './img/card-Portfolio.png',
-    details: ['Back End Dev', '2015'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    langs: ['html', 'css', 'javaScript'],
-    gitLink: '#',
-    srcLink: '#',
+    name: "Tonic",
+    details: ["CANOPY", "Back End Dev", "2015"],
+    smallDescription:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    bigDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    imageUrlMobile: "./Images/First.png",
+    imageUrlDesktop: "Images/desktop-1.png",
+    popupImageUrlMobile: "./Images/First.png",
+    popupImageUrlDesktop: "assets/popup.png",
+    technologiesPopup: [
+      "html",
+      "css",
+      "javaScript",
+      "github",
+      "Ruby",
+      "Bootstrap",
+    ],
+    technologies: ["html", "css", "javaScript"],
+    linkLive: "https://butlermuwo.github.io/Portfolio/",
+    linkSource: "https://butlermuwo.github.io/Portfolio/",
   },
   {
-    id: 2,
-    title: 'Tonic',
-    subTitle: 'CANOPY',
-    imageMobile: './img/Snapshoot-Portfolio.png',
-    imageDesktop: './img/Snapshoot-Portfolio3.png',
-    details: ['Back End Dev', '2015'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    langs: ['html', 'css', 'javaScript'],
-    gitLink: '#',
-    srcLink: '#',
+    name: "Multi-Post Stories",
+    details: ["FACEBOOK", "Full Stack Dev", "2015"],
+    smallDescription:
+      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
+    bigDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    imageUrlMobile: "./Images/Second.png",
+    imageUrlDesktop: "./Images/desktop-2.png",
+    technologiesPopup: ["html", "Ruby on rails", "css", "javaScript"],
+    technologies: ["html", "css", "javaScript"],
+    popupImageUrlMobile: "./Images/Second.png",
+    popupImageUrlDesktop: "./assets/popup.png",
+    linkLive: "https://butlermuwo.github.io/Portfolio/",
+    linkSource: "",
   },
   {
-    id: 3,
-    title: 'Tonic',
-    subTitle: 'CANOPY',
-    imageMobile: './img/Snapshoot-Portfolio2.png',
-    imageDesktop: './img/Snapshoot-Portfolio.png',
-    details: ['Back End Dev', '2015'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    langs: ['html', 'css', 'javaScript'],
-    gitLink: '#',
-    srcLink: '#',
+    name: "Facebook 360",
+    details: ["FACEBOOK", "Full Stack Dev", "2015"],
+    smallDescription:
+      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    bigDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    imageUrlMobile: "Images/Third.png",
+    imageUrlDesktop: "Images/desktop-3.png",
+    technologiesPopup: ["html", "Ruby on rails", "css", "javaScript"],
+    technologies: ["html", "Ruby on rails", "css", "javaScript"],
+    popupImageUrlMobile: "Images/Third.png",
+    popupImageUrlDesktop: "assets/popup.png",
+    linkLive: "https://butlermuwo.github.io/Portfolio/",
+    linkSource: "",
   },
   {
-    id: 4,
-    title: 'Tonic',
-    subTitle: 'CANOPY',
-    imageMobile: './img/Snapshoot-Portfolio3.png',
-    imageDesktop: './img/Snapshoot-Portfolio1.png',
-    details: ['Back End Dev', '2015'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    langs: ['html', 'css', 'javaScript'],
-    gitLink: '#',
-    srcLink: '#',
+    name: "Uber navigation",
+    details: ["Uber", "Lead developer", "2018"],
+    smallDescription:
+      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
+    bigDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    imageUrlMobile: "Images/Fourth.png",
+    imageUrlDesktop: "Images/desktop-4.png",
+    technologiesPopup: ["html", "Ruby on rails", "css", "javaScript"],
+    technologies: ["html", "Ruby on rails", "css", "javaScript"],
+    popupImageUrlMobile: "Images./Fourth.png",
+    popupImageUrlDesktop: "assets/popup.png",
+    linkLive: "",
+    linkSource: "",
   },
 ];
 
-for (let i = 0; i < cardObject.length; i++) {
-  const element = cardObject[i];
-
-  document.querySelector(
-    '.main-section'
-  ).innerHTML += `<section class="tonic-section" id="tonic">
-        <ul class="images">
-          <li>
-            <img
-              src="${element.imageDesktop}"
-              alt="nature card"
-              class="desktop-images"
-            />
-          </li>
-          <li>
-            <img
-              src="${element.imageMobile}"
-              alt="tarnner christensen from high school dropout to product designer at facebook"
-              class="mobile-images"
-            />
-          </li>
-        </ul>
-        <div class="tonic">
-          <h3>${element.title}</h3>
-          <div class="date">
-            <h3>${element.subTitle}</h3>
-                ${element.details
-                  .map(
-                    (
-                      x
-                    ) => ` <img src="img/Counter.png" alt="" class="counter" />
-            <p>${x}</p>`
-                  )
-                  .join('')}           
-          </div>
-          <p class="daily">
-           ${element.description}
-          </p>      
-          
-          <div>           
-            ${element.langs
-              .map((x) => `<button type="button">${x}</button>`)
-              .join('')}           
-          </div>
-          <button id='${element.id}' class="see-project">See Project</button>
-        </div>
-      </section>`;
+function g(e, isClass = false) {
+  if (isClass) {
+    return document.getElementsByClassName(e)[0];
+  }
+  return document.getElementById(e);
 }
 
-document.querySelectorAll('.see-project').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const id = Number(btn.id);
-    const project = cardObject.find((p) => p.id === id);
+// eslint-disable-next-line no-unused-vars
+function popup(projectIndex) {
+  const project = projects[projectIndex];
+  g("t").innerText = project.name;
+  g("mImage", true).src = project.imageUrlMobile;
+  g("mImageDsk", true).src = project.popupImageUrlDesktop;
+  g("modalText", true).innerText = project.bigDescription;
+  g("modalTextMobile", true).innerText = project.smallDescription;
+  g("myModal").style.display = "block";
+}
 
-    document.querySelector('.pop').innerHTML = `
-      
-    <section class="modal-wrapper">
-      <div class="modal">
-        <div class="modal-title">
-          <h2>${project.title}</h2>
-          <div class='close-modal'>
-          <span class="iconify" data-icon="ep:close-bold"></span>
-          </div>
-        </div>
-        <div class="date">
-            <h3>${project.subTitle}</h3>
-                ${project.details
-                  .map(
-                    (
-                      x
-                    ) => ` <img src="img/Counter.png" alt="" class="counter" />
-            <p>${x}</p>`
-                  )
-                  .join('')}           
-          </div>
-        <img src="${project.imageDesktop}"/>
-        <div class="modal-content">
-          <p>
-            ${project.description}
-          </p>
-          <div>
-             <div>           
-            ${project.langs
-              .map((x) => `<button type="button">${x}</button>`)
-              .join('')}           
-          </div>
-            <div class="modal-btns">
-              <a href="${project.gitLink}" class="btn github-link">
-                See live
-                <span class="iconify iconbtn" data-icon="bytesize:github"></span>                                                                      
-              </a>
-              <a href="${project.srcLink}" class="btn source-link">
-                See source                
-                <span class="iconify iconbtnlink" data-icon="cil:external-link"></span>                            
-              </a>
-            </div>
-          </div>
-        </div>
+function init() {
+  for (let k = 0; k < projects.length; k += 1) {
+    const project = projects[k];
+    const template = document.createElement("template");
+    const technologies = project.technologies.map(
+      (t) => `<li class="langu">${t}</li>`
+    );
+
+    let flexStart = "start";
+    let flexEnd = "end";
+    if (k % 2 !== 0) {
+      flexStart = "end";
+      flexEnd = "start";
+    }
+
+    template.innerHTML = `<article class="project-card">
+    <div class="content1">
+    <div class="project-img ${flexStart}">
+      <img
+        src="${project.imageUrlMobile}"
+        alt="a brief description of what we do"
+      />
+    </div>
+    <div class="desktop-image">
+      <img src="${project.imageUrlDesktop}" alt="Nature product catalog" />
+    </div>
+    </div>
+    <div class="card-info ${flexEnd}">
+      <h2 class="project-title">${project.name}</h2>
+      <div class="info">
+        <span class="canopy">CANOPY</span>
+        <img src="./Images/Counter.png" alt="dot" />
+        <span class="">back end dev</span>
+        <img src="./Images/Counter.png" alt="dot" />
+        <span>2015</span>
       </div>
-    </section>  
-    `;
-    document.querySelector('.close-modal').addEventListener('click', () => {
-      document.querySelector('.modal-wrapper').remove();
-    });
-  });
+      <p class="project-paragraph">
+        ${project.smallDescription}
+      </p>
+      <ul class="technologies">
+        ${unescape(technologies.join(''))}
+        
+      </ul>
+      <button type="button" class="project-btn" onclick=popup(${k})>see project</button>
+    </div>
+  </article>`;
+
+    g("projects").appendChild(template.content.firstChild);
+  }
+}
+
+const modal = document.getElementById("myModal");
+const span = document.getElementsByClassName("close")[0];
+
+// eslint-disable-next-line func-names
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+// eslint-disable-next-line func-names
+window.onclick = function (event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};
+
+window.onload = init();
+
+// OPEN &  CLOSE MENU
+
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger = document.querySelector(".hamburger");
+const closeIcon = document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
+
+hamburger.addEventListener("click", toggleMenu);
+
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener("click", toggleMenu);
 });

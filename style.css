@@ -249,7 +249,6 @@ span {
   display: flex;
   text-align: start;
   margin: 10px;
-  width: 292px;
 }
 
 .project-paragraph p {
@@ -852,8 +851,21 @@ span {
     margin: 0 5px;
   }
 
+  .project-card:nth-child(even) .content1 {
+    order: 2;
+  }
+
   .hamburger {
     display: none;
+  }
+
+  .modalImage img {
+    display: none;
+  }
+
+  .modalImageDesktop img {
+    display: block;
+    width: 100%;
   }
 }
 

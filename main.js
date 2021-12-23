@@ -98,16 +98,9 @@ function init() {
       (t) => `<li class="langu">${t}</li>`
     );
 
-    let flexStart = "start";
-    let flexEnd = "end";
-    if (k % 2 !== 0) {
-      flexStart = "end";
-      flexEnd = "start";
-    }
-
     template.innerHTML = `<article class="project-card">
     <div class="content1">
-    <div class="project-img ${flexStart}">
+    <div class="project-img">
       <img
         src="${project.imageUrlMobile}"
         alt="a brief description of what we do"
@@ -117,7 +110,7 @@ function init() {
       <img src="${project.imageUrlDesktop}" alt="Nature product catalog" />
     </div>
     </div>
-    <div class="card-info ${flexEnd}">
+    <div class="card-info">
       <h2 class="project-title">${project.name}</h2>
       <div class="info">
         <span class="canopy">CANOPY</span>
@@ -130,7 +123,7 @@ function init() {
         ${project.smallDescription}
       </p>
       <ul class="technologies">
-        ${unescape(technologies.join(''))}
+        ${unescape(technologies.join(""))}
         
       </ul>
       <button type="button" class="project-btn" onclick=popup(${k})>see project</button>

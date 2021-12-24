@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
 }
 
 html {
@@ -61,7 +61,7 @@ header {
 .introduction {
   display: flex;
   flex-direction: column;
-  background-image: url("./Images/background.png");
+  background-image: url('./Images/background.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -420,7 +420,7 @@ span {
 .contact-heading {
   font-weight: 700;
   font-size: 40px;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   color: white;
   margin-bottom: 5px;
 }
@@ -429,7 +429,7 @@ span {
   margin-top: 5px;
   font-weight: 400;
   line-height: 28px;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   font-size: 20px;
   color: #ebebff;
   text-align: center;
@@ -450,7 +450,7 @@ span {
   font-size: 17px;
   padding: 18px;
   color: #172b4d;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   border: 1px solid #cfd8dc;
 
   /* max-width: 400px; */
@@ -464,7 +464,7 @@ span {
   border: 1px solid #cfd8dc;
   margin-bottom: 15px;
   color: #b3bac5;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
 }
 
 .contact-submit {
@@ -475,7 +475,7 @@ span {
   background: #fff;
   color: #6070ff;
   font-size: 17px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .btn-effect:disabled {
@@ -646,6 +646,15 @@ span {
 .cards-container {
   display: flex;
   flex-direction: row;
+}
+
+.error-message {
+  display: none;
+  text-align: center;
+}
+
+#error {
+  color: #fff;
 }
 
 /* Desktop Version Start */

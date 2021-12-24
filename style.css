@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -57,7 +61,7 @@ header {
 .introduction {
   display: flex;
   flex-direction: column;
-  background-image: url("./Images/background.png");
+  background-image: url('./Images/background.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -129,6 +133,7 @@ header {
   outline: none;
   background: inherit;
   cursor: pointer;
+  display: block;
 }
 
 .closeIcon {
@@ -244,7 +249,6 @@ span {
   display: flex;
   text-align: start;
   margin: 10px;
-  width: 292px;
 }
 
 .project-paragraph p {
@@ -416,7 +420,7 @@ span {
 .contact-heading {
   font-weight: 700;
   font-size: 40px;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   color: white;
   margin-bottom: 5px;
 }
@@ -425,7 +429,7 @@ span {
   margin-top: 5px;
   font-weight: 400;
   line-height: 28px;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   font-size: 20px;
   color: #ebebff;
   text-align: center;
@@ -446,7 +450,7 @@ span {
   font-size: 17px;
   padding: 18px;
   color: #172b4d;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   border: 1px solid #cfd8dc;
 
   /* max-width: 400px; */
@@ -460,7 +464,7 @@ span {
   border: 1px solid #cfd8dc;
   margin-bottom: 15px;
   color: #b3bac5;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
 }
 
 .contact-submit {
@@ -471,7 +475,7 @@ span {
   background: #fff;
   color: #6070ff;
   font-size: 17px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .btn-effect:disabled {
@@ -501,6 +505,157 @@ span {
 }
 
 /* contact form end */
+
+/* Popup Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 35px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modalImage img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.modalImageDesktop img {
+  display: none;
+}
+
+.modalText {
+  display: none;
+}
+
+.modalTextMobile {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin: 9px 6px;
+}
+
+.modalLang {
+  background-color: #ebebff;
+  padding: 5px 15px;
+  color: #4472e7;
+  border-radius: 10px;
+  font-weight: 500;
+  font-family: poppins, sans-serif;
+  display: inline-block;
+  margin: 0;
+}
+
+.option-modal {
+  color: #7a869a;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  position: static;
+  width: 88px;
+  padding-top: 8px;
+}
+
+.modal .canopy,
+.option {
+  font-weight: 600;
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+}
+
+.modalButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 32px;
+}
+
+.modalButtons button {
+  border: 1px solid #6070ff;
+  padding: 10px 10px;
+  color: #396df2;
+  font-size: 17px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.modalButtons button:hover {
+  color: #fff;
+  background-color: #396df2;
+}
+
+.TopModalItems h2 {
+  color: #172b4d;
+  font-weight: bold;
+  line-height: 44px;
+  font-size: 32px;
+  font-family: poppins, sans-serif;
+  margin-left: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.MidModalItems {
+  display: flex;
+  flex-direction: column;
+}
+
+.language1 {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.error-message {
+  display: none;
+  text-align: center;
+}
+
+#error {
+  color: #fff;
+}
 
 /* Desktop Version Start */
 
@@ -684,7 +839,43 @@ span {
     width: 400px;
   }
 
+  .cards-container {
+    flex-direction: row;
+  }
+
+  .cards-container li {
+    margin: 0 10px;
+  }
+
+  .modal-content {
+    width: 70%;
+  }
+
+  .modalButtons {
+    flex-direction: row;
+    justify-content: start;
+  }
+
+  .modalButtons button {
+    margin: 0 5px;
+  }
+
+  .project-card:nth-child(even) .content1 {
+    order: 2;
+  }
+
   .hamburger {
     display: none;
   }
+
+  .modalImage img {
+    display: none;
+  }
+
+  .modalImageDesktop img {
+    display: block;
+    width: 100%;
+  }
 }
+
+/* Desktop Version End */

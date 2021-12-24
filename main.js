@@ -88,7 +88,7 @@ function popup(projectIndex) {
   g('modalText', true).innerText = project.bigDescription;
   g('modalTextMobile', true).innerText = project.smallDescription;
   g('myModal').style.display = 'block';
-}
+};
 
 function init() {
   for (let k = 0; k < projects.length; k += 1) {

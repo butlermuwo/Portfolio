@@ -95,7 +95,7 @@ function init() {
     const project = projects[k];
     const template = document.createElement('template');
     const technologies = project.technologies.map(
-      (t) => `<li class="langu">${t}</li>`,
+      (t) => `<li class="langu">${t}</li>`
     );
 
     template.innerHTML = `<article class="project-card">
@@ -196,4 +196,11 @@ for (let i = 0; i < getInput.length; i += 1) {
   getInput[i].addEventListener('change', () => {
     myLocalStorage();
   });
+}
+
+const inputData = JSON.parse(localStorage.getItem('formData'));
+if (inputData !== null) {
+  userName.value = inputData.myName;
+  userMail.value = inputData.email;
+  textMessage.value = inputData.message;
 }

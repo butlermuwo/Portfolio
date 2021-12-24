@@ -197,8 +197,6 @@ for (let i = 0; i < getInput.length; i += 1) {
     myLocalStorage();
   });
 }
-
-
 // Form Validation
 const errorMessage = document.querySelector('.error-message');
 const form = document.querySelector('.contact-form');

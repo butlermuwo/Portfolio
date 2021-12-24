@@ -95,7 +95,7 @@ function init() {
     const project = projects[k];
     const template = document.createElement('template');
     const technologies = project.technologies.map(
-      (t) => `<li class="langu">${t}</li>`,
+      (t) => `<li class="langu">${t}</li>`
     );
 
     template.innerHTML = `<article class="project-card">
@@ -141,12 +141,3 @@ const span = document.getElementsByClassName('close')[0];
 span.onclick = function () {
   modal.style.display = 'none';
 };
-
-// eslint-disable-next-line func-names
-window.onclick = function (event) {
-  if (event.target === modal) {
-    modal.style.display = 'none';
-  }
-};
-
-window.onload = init();

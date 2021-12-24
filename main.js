@@ -95,7 +95,7 @@ function init() {
     const project = projects[k];
     const template = document.createElement('template');
     const technologies = project.technologies.map(
-      (t) => `<li class="langu">${t}</li>`
+      (t) => `<li class="langu">${t}</li>`,
     );
 
     template.innerHTML = `<article class="project-card">
@@ -141,3 +141,38 @@ const span = document.getElementsByClassName('close')[0];
 span.onclick = function () {
   modal.style.display = 'none';
 };
+
+// eslint-disable-next-line func-names
+window.onclick = function (event) {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+};
+
+window.onload = init();
+
+// OPEN &  CLOSE MENU
+
+const menu = document.querySelector('.menu');
+const menuItems = document.querySelectorAll('.menuItem');
+const hamburger = document.querySelector('.hamburger');
+const closeIcon = document.querySelector('.closeIcon');
+const menuIcon = document.querySelector('.menuIcon');
+
+function toggleMenu() {
+  if (menu.classList.contains('showMenu')) {
+    menu.classList.remove('showMenu');
+    closeIcon.style.display = 'none';
+    menuIcon.style.display = 'block';
+  } else {
+    menu.classList.add('showMenu');
+    closeIcon.style.display = 'block';
+    menuIcon.style.display = 'none';
+  }
+}
+
+hamburger.addEventListener('click', toggleMenu);
+
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener('click', toggleMenu);
+});

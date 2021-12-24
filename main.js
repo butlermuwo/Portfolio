@@ -88,14 +88,14 @@ function popup(projectIndex) {
   g('modalText', true).innerText = project.bigDescription;
   g('modalTextMobile', true).innerText = project.smallDescription;
   g('myModal').style.display = 'block';
-};
+}
 
 function init() {
   for (let k = 0; k < projects.length; k += 1) {
     const project = projects[k];
     const template = document.createElement('template');
     const technologies = project.technologies.map(
-      (t) => `<li class="langu">${t}</li>`
+      (t) => `<li class="langu">${t}</li>`,
     );
 
     template.innerHTML = `<article class="project-card">
